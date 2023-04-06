@@ -41,4 +41,7 @@ public class Game {
         this.score = new Score(positive_ratings, negative_ratings+1,this.appid);
         this.genre = new Genre(genres, steamspy_tags, categories,this.appid);
     }
+    public void printname(){
+        System.out.println(this.name);
+    }
 }

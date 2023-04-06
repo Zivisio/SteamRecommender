@@ -1,5 +1,9 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+import static java.util.Collections.reverse;
 
 public class Recomender {
     ArrayList<Game> games;
@@ -26,6 +30,30 @@ public class Recomender {
             }
         }
         return gameslike;
+    }
+    public void gameslikeusingfancy(String name){
+        int Indexofappid = nametoappid(name);
+        ArrayList<Game> gameslike = new ArrayList<Game>();
+        ArrayList<GameWithScore> med = new ArrayList<GameWithScore>();
+        for(int i = 0; i < games.size(); i++) {
+            double score = gamescore(games.get(i), games.get(Indexofappid));
+            med.add(new GameWithScore(games.get(i), score));
+        }
+        //sort med by score
+        for(int i = 0; i < med.size(); i++){
+            for(int j = 0; j < med.size()-1; j++){
+                if(med.get(j).similarity < med.get(j+1).similarity){
+                    GameWithScore temp = med.get(j);
+                    med.set(j, med.get(j+1));
+                    med.set(j+1, temp);
+                }
+            }
+        }
+
+
+        for(int i =0;i<10;i++){
+            med.get(i).game.printname();
+        }
     }
     public int findappid(int appid) {
         for (int i = 0; i < games.size(); i++) {
@@ -54,8 +82,34 @@ public class Recomender {
                 }
             }
         }
-        for (int i = 0; i < recs.size(); i++) {
+        for (int i = 0; i < 10; i++) {
             System.out.println(recs.get(i).name);
+        }
+    }
+    public double gamescore(Game a, Game b){
+        //go through steam_spytags and see how many are shared put genres shared *2 over total tags
+        double along = a.genre.steamspy_tags.length;
+        double blong = b.genre.steamspy_tags.length;
+        if(along >= blong){
+            double shared = 0;
+            for (int i = 0; i < along; i++) {
+                for (int j = 0; j < blong; j++) {
+                    if(a.genre.steamspy_tags[i].equals(b.genre.steamspy_tags[j])){
+                        shared++;
+                    }
+                }
+            }
+            return shared;
+        }else{
+            double shared = 0;
+            for (int i = 0; i < blong; i++) {
+                for (int j = 0; j < along; j++) {
+                    if(b.genre.steamspy_tags[i].equals(a.genre.steamspy_tags[j])){
+                        shared++;
+                    }
+                }
+            }
+            return shared;
         }
     }
     public void printgame(String name, ArrayList<Game> games) {

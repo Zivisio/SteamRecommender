@@ -39,6 +39,6 @@ public class Main {
             games.add(game);
         }
         Recomender rec = new Recomender(games);
-        rec.gameslike("Hollow knight");
+        rec.gameslikeusingfancy("Poly Bridge");
     }
 }
