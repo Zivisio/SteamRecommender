@@ -39,6 +39,6 @@ public class Main {
             games.add(game);
         }
         Recomender rec = new Recomender(games);
-        rec.gameslikeusingfancy("Poly Bridge");
+        rec.gameslikeusingfancy("Factorio");
     }
 }

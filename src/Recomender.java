@@ -87,11 +87,14 @@ public class Recomender {
         }
     }
     public double gamescore(Game a, Game b){
+        if((a.score.positive_ratings == 0 || b.score.positive_ratings == 0)||(a.score.negative_ratings>a.score.positive_ratings)){
+            return -100;
+        }
         //go through steam_spytags and see how many are shared put genres shared *2 over total tags
         double along = a.genre.steamspy_tags.length;
         double blong = b.genre.steamspy_tags.length;
+        double shared = 0;
         if(along >= blong){
-            double shared = 0;
             for (int i = 0; i < along; i++) {
                 for (int j = 0; j < blong; j++) {
                     if(a.genre.steamspy_tags[i].equals(b.genre.steamspy_tags[j])){
@@ -101,7 +104,6 @@ public class Recomender {
             }
             return shared;
         }else{
-            double shared = 0;
             for (int i = 0; i < blong; i++) {
                 for (int j = 0; j < along; j++) {
                     if(b.genre.steamspy_tags[i].equals(a.genre.steamspy_tags[j])){
