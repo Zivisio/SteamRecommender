@@ -2,8 +2,13 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Recomender {
-    public ArrayList<Game> gameslike(int appid, ArrayList<Game> games) {
-        int Indexofappid = findappid(appid, games);
+    ArrayList<Game> games;
+    public Recomender(ArrayList<Game> games) {
+        this.games = games;
+    }
+
+    public ArrayList<Game> gameslike(int appid) {
+        int Indexofappid = findappid(appid);
         ArrayList<Game> gameslike = new ArrayList<Game>();
         for(int i = 0; i < games.size(); i++) {
             if (games.get(i).genre.genres == games.get(Indexofappid).genre.genres) {
@@ -12,8 +17,8 @@ public class Recomender {
         }
         return gameslike;
     }
-    public ArrayList<Game> gameslike(String name, ArrayList<Game> games) {
-        int Indexofappid = nametoappid(name, games);
+    public ArrayList<Game> gameslike(String name) {
+        int Indexofappid = nametoappid(name);
         ArrayList<Game> gameslike = new ArrayList<Game>();
         for(int i = 0; i < games.size(); i++) {
             if (games.get(i).genre.genres == games.get(Indexofappid).genre.genres) {
@@ -22,7 +27,7 @@ public class Recomender {
         }
         return gameslike;
     }
-    public int findappid(int appid, ArrayList<Game> games) {
+    public int findappid(int appid) {
         for (int i = 0; i < games.size(); i++) {
             if (games.get(i).appid == appid) {
                 return i;
@@ -30,7 +35,7 @@ public class Recomender {
         }
         return -1;
     }
-    public int nametoappid(String name, ArrayList<Game> games) {
+    public int nametoappid(String name) {
         for (int i = 0; i < games.size(); i++) {
             if (games.get(i).name.toLowerCase().equals( name.toLowerCase())) {
                 return i;
@@ -54,7 +59,7 @@ public class Recomender {
         }
     }
     public void printgame(String name, ArrayList<Game> games) {
-        int Indexofappid = nametoappid(name, games);
+        int Indexofappid = nametoappid(name);
         Game game = games.get(Indexofappid);
         System.out.println("Name: " + game.name);
         System.out.println("Release Date: " + game.release_date);

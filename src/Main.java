@@ -38,36 +38,7 @@ public class Main {
             Game game = new Game(data[0], data[1], data[2], data[3], data[4], data[5], data[6], data[7], data[8], data[9], data[10], data[11], data[12], data[13], data[14], data[15], data[16], data[17]);
             games.add(game);
         }
-        ArrayList<jamespainobject> allgenres = new ArrayList<jamespainobject>();
-        for(int i = 0; i < games.size(); i++){
-            for(int j = 0; j < games.get(i).genre.steamspy_tags.length; j++){
-                //check if the genre is already in the list and if it is then add one to timesseen in that jamespainobject
-                boolean found = false;
-                for(int k = 0; k < allgenres.size(); k++){
-                    if(allgenres.get(k).name.equals(games.get(i).genre.steamspy_tags[j])){
-                        allgenres.get(k).timesseen++;
-                        found = true;
-                    }
-                }
-                if(!found){
-                    allgenres.add(new jamespainobject(games.get(i).genre.steamspy_tags[j], 1));
-                }
-            }
-        }
-        //sort the list of genres by timesseen
-        for(int i = 0; i < allgenres.size(); i++){
-            for(int j = 0; j < allgenres.size(); j++){
-                if(allgenres.get(i).timesseen > allgenres.get(j).timesseen){
-                    jamespainobject temp = allgenres.get(i);
-                    allgenres.set(i, allgenres.get(j));
-                    allgenres.set(j, temp);
-                }
-            }
-        }
-        //put the list in a txt file
-        System.out.println(allgenres.size());
-        for(int i = 0; i < allgenres.size(); i++){
-            System.out.println(allgenres.get(i).name + " " + allgenres.get(i).timesseen);
-        }
+        Recomender rec = new Recomender(games);
+        rec.gameslike("Hollow knight");
     }
 }
