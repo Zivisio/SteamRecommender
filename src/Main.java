@@ -1,24 +1,15 @@
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.io.PrintWriter;
 public class Main {
     public static void main(String[] args) throws IOException {
-        //appid,name,release_date,english,developer,publisher,platforms,required_age,categories,genres,steamspy_tags,achievements,positive_ratings,negative_ratings,average_playtime,median_playtime,owners,price
-        //genre has Genre, steam tags, catagories
-        //score has positive and negative ratings
-        //game has everything else
+        long startTime = System.currentTimeMillis();
         Scanner sc = new Scanner(new File("steam.csv"));
         ArrayList<Game> games = new ArrayList<Game>();
-        //skip first line
         sc.nextLine();
         while(sc.hasNextLine()) {
             String line = sc.nextLine();
-            //go thorugh each line and find commas in between quotes and replace them with '≡' and then remove the quotes
-            //this is so that the commas in the steamspy_tags don't get split
             String temp = "";
             boolean inQuotes = false;
             for (int i = 0; i < line.length(); i++) {
@@ -39,6 +30,9 @@ public class Main {
             games.add(game);
         }
         Recomender rec = new Recomender(games);
-        rec.gameslikeusingfancy("Factorio");
+        rec.gameslikeusingfancy("Celeste");
+        long endTime = System.currentTimeMillis();
+        long duration = (endTime - startTime);
+        System.out.println("Time taken: " + duration + "ms");
     }
 }
