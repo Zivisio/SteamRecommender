@@ -1,0 +1,341 @@
+Indie 16232
+Action 10322
+Casual 8205
+Adventure 7770
+Strategy 4173
+Simulation 3284
+Early Access 2967
+RPG 2785
+Free to Play 1662
+Puzzle 1116
+VR 961
+Sports 781
+Racing 765
+Platformer 648
+Nudity 570
+Sexual Content 557
+Visual Novel 546
+Violent 545
+Anime 538
+Horror 493
+Point & Click 492
+Gore 476
+Hidden Object 460
+Multiplayer 405
+FPS 405
+Massively Multiplayer 377
+Pixel Graphics 249
+Shoot 'Em Up 245
+Open World 243
+Survival 235
+Space 225
+Arcade 203
+Female Protagonist 199
+RPGMaker 192
+RTS 174
+Turn-Based 171
+Classic 170
+Tower Defense 168
+Card Game 164
+2D 163
+Singleplayer 161
+Story Rich 159
+Zombies 158
+Sci-fi 157
+Utilities 138
+World War II 130
+Great Soundtrack 125
+Co-op 120
+Match 3 119
+Fighting 117
+Management 116
+Fantasy 115
+Retro 114
+Music 105
+Board Game 105
+Rogue-like 104
+Turn-Based Strategy 103
+Shooter 101
+Bullet Hell 96
+JRPG 94
+Sandbox 94
+Stealth 93
+First-Person 91
+Comedy 89
+Family Friendly 86
+Atmospheric 85
+Difficult 85
+Education 84
+Hack and Slash 83
+Local Multiplayer 80
+Design & Illustration 80
+Memes 78
+Psychological Horror 76
+City Builder 71
+Historical 69
+Mystery 66
+Clicker 64
+Flight 64
+Building 62
+Driving 59
+Puzzle-Platformer 59
+Cyberpunk 58
+Local Co-Op 56
+Metroidvania 56
+Walking Simulator 55
+Exploration 55
+Funny 55
+Animation & Modeling 54
+Physics 53
+Medieval 51
+Tactical 51
+Survival Horror 51
+Rhythm 48
+Beat 'em up 47
+Relaxing 46
+Dungeon Crawler 45
+Twin Stick Shooter 44
+4 Player Local 44
+Third-Person Shooter 42
+Detective 42
+3D Platformer 42
+2D Fighter 41
+Cute 40
+Post-apocalyptic 40
+Otome 39
+Naval 39
+4X 37
+Mature 37
+Trains 37
+Mechs 36
+Dinosaurs 34
+FMV 34
+Grand Strategy 33
+Time Management 33
+Dating Sim 33
+Choices Matter 32
+Video Production 31
+MMORPG 31
+Minimalist 31
+Pirates 31
+Choose Your Own Adventure 29
+Warhammer 40K 29
+Star Wars 28
+Top-Down Shooter 27
+Lovecraftian 26
+Programming 26
+Base-Building 26
+Third Person 25
+War 25
+VR Only 25
+Steampunk 24
+Agriculture 24
+Battle Royale 24
+World War I 23
+Crafting 23
+Text-Based 23
+Game Development 23
+Western 23
+Parkour 23
+Robots 22
+Turn-Based Tactics 22
+LEGO 22
+Top-Down 22
+Superhero 22
+Tanks 21
+Turn-Based Combat 21
+Destruction 21
+Audio Production 20
+Rogue-lite 20
+Isometric 20
+Action RPG 20
+Hacking 20
+Surreal 19
+Realistic 19
+Military 19
+Wargame 18
+Fast-Paced 18
+Economy 17
+Offroad 17
+Fishing 17
+Vampire 17
+Software 16
+Short 16
+Chess 16
+Level Editor 15
+Pinball 15
+Cats 15
+Runner 14
+Golf 14
+Football 14
+Psychedelic 14
+Tennis 14
+Character Customization 14
+Noir 14
+Hunting 13
+MOBA 13
+Ninja 13
+Trading Card Game 13
+Underwater 13
+Dragons 12
+Competitive 12
+Crime 12
+Side Scroller 12
+Horses 12
+Souls-like 12
+Hex Grid 11
+Baseball 11
+Politics 11
+Assassin 11
+Cold War 11
+Software Training 11
+Magic 11
+On-Rails Shooter 10
+Hand-drawn 10
+Word Game 10
+PvP 10
+Procedural Generation 10
+Interactive Fiction 10
+God Game 10
+Sokoban 10
+Web Publishing 9
+Online Co-Op 9
+Batman 9
+Motocross 9
+Soccer 9
+Remake 9
+Illuminati 9
+Aliens 9
+Villain Protagonist 9
+Basketball 9
+Dark Humor 9
+Trading 8
+Action-Adventure 8
+Space Sim 8
+Wrestling 8
+Sniper 8
+Mythology 8
+Photo Editing 8
+Mouse only 8
+Masterpiece 7
+Political 7
+6DOF 7
+Swordplay 7
+Cult Classic 7
+Dog 7
+Romance 7
+1990's 7
+Mini Golf 7
+Faith 7
+Replay Value 6
+Mars 6
+Martial Arts 6
+Bikes 6
+1980s 6
+Mining 6
+Satire 6
+Typing 6
+Dark Fantasy 6
+Hockey 5
+Skateboarding 5
+Dark 5
+Multiple Endings 5
+Games Workshop 5
+Colorful 5
+Resource Management 5
+Comic Book 5
+Character Action Game 5
+Arena Shooter 5
+Split Screen 5
+Bullet Time 5
+Abstract 5
+Capitalism 4
+Submarine 4
+Benchmark 4
+Rome 4
+Futuristic 4
+Science 4
+Lara Croft 4
+Old School 4
+BMX 4
+Drama 4
+Experimental 4
+Dystopian  4
+Motorbike 3
+Quick-Time Events 3
+Real-Time with Pause 3
+Snow 3
+Team-Based 3
+Time Travel 3
+Party-Based RPG 3
+Grid-Based Movement 3
+Controller 3
+Loot 3
+Narration 3
+Demons 3
+Pool 3
+3D 3
+Cartoony 3
+Werewolves 3
+360 Video 3
+Gambling 3
+Time Manipulation 3
+Touch-Friendly 3
+Real-Time 3
+Philisophical 3
+Documentary 3
+Lemmings 3
+Beautiful 3
+Spelling 3
+America 2
+Strategy RPG 2
+Psychological 2
+Score Attack 2
+Linear 2
+Cycling 2
+Voice Control 2
+e-sports 2
+Snowboarding 2
+CRPG 2
+Real Time Tactics 2
+Cartoon 2
+Heist 2
+Alternate History 2
+Gothic 2
+Bowling 2
+Class-Based 2
+Thriller 2
+Dungeons & Dragons 2
+Voxel 2
+Supernatural 2
+Moddable 2
+Tactical RPG 2
+Time Attack 2
+Parody  1
+Movie 1
+Skating 1
+Investigation 1
+Cinematic 1
+Mystery Dungeon 1
+Intentionally Awkward Controls 1
+Perma Death 1
+Kickstarter 1
+Music-Based Procedural Generation 1
+Epic 1
+Nonlinear 1
+Spectacle fighter 1
+GameMaker 1
+Gun Customization 1
+Conversation 1
+3D Vision 1
+Inventory Management 1
+Mod 1
+Diplomacy 1
+Sailing 1
+2.5D 1
+Blood 1
+NSFW 1
+Stylized 1
+Logic 1
+
+Process finished with exit code 0
