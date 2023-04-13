@@ -60,14 +60,13 @@ public class Main {
                 }
             }
             String[] data = temp.toString().split("≡");
-            System.out.println(data[0]);
             Game game = new Game(data[0], data[1], data[2], data[3], data[4], data[5], data[6], data[7], data[8], data[9], data[10], data[11], data[12], data[13], data[14], data[15], data[16], data[17]);
             games.add(game);
         }
         Recomender rec = new Recomender(games);
         rec.gameslikeusingfancy("Factorio");
         long end = System.currentTimeMillis();
-        System.out.println(end-begin);
+        System.out.println(end-begin + "ms");
     }
     public static void main(String[] args) throws IOException {
         Main main = new Main();
