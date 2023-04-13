@@ -46,7 +46,7 @@ public class Main {
         //genre has Genre, steam tags, catagories
         //score has positive and negative ratings
         //game has everything else
-        Scanner sc = new Scanner(new File("steam2.csv"));
+        Scanner sc = new Scanner(new File("steam3.csv"));
         ArrayList<Game> games = new ArrayList<Game>();
         //skip first line
         sc.nextLine();
