@@ -14,7 +14,7 @@ public class Main {
             String line = sc.nextLine();
             //go thorugh each line and find commas in between quotes and replace them with '≡' and then remove the quotes
             //this is so that the commas in the steamspy_tags don't get split
-            String temp = "";
+            StringBuilder temp = new StringBuilder();
             boolean inQuotes = false;
             for (int i = 0; i < line.length(); i++) {
                 if (line.charAt(i) == '"')
@@ -22,14 +22,14 @@ public class Main {
                 else {
                     if (!inQuotes) {
                         if (line.charAt(i) == ',')
-                            temp += '≡';
+                            temp.append('≡');
                         else {
-                            temp += line.charAt(i);
+                            temp.append(line.charAt(i));
                         }
                     }
                 }
             }
-            String[] data = temp.split("≡");
+            String[] data = temp.toString().split("≡");
             Game game = new Game(data[0], data[1], data[2], data[3], data[4], data[5], data[6], data[7], data[8], data[9], data[10], data[11], data[12], data[13], data[14], data[15], data[16], data[17]);
             games.add(game);
         }
@@ -52,14 +52,15 @@ public class Main {
             String line = sc.nextLine();
             //go thorugh each line and find commas in between quotes and replace them with '≡' and then remove the quotes
             //this is so that the commas in the steamspy_tags don't get split
-            String temp = "";
+            StringBuilder temp = new StringBuilder();
             boolean inQuotes = false;
             for (int i = 0; i < line.length(); i++) {
                 if (!(line.charAt(i) == '"')) {// skips quotes
-                    temp += line.charAt(i);
+                    temp.append(line.charAt(i));
                 }
             }
-            String[] data = temp.split("≡");
+            String[] data = temp.toString().split("≡");
+            System.out.println(data[0]);
             Game game = new Game(data[0], data[1], data[2], data[3], data[4], data[5], data[6], data[7], data[8], data[9], data[10], data[11], data[12], data[13], data[14], data[15], data[16], data[17]);
             games.add(game);
         }

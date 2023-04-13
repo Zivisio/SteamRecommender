@@ -1,0 +1,7 @@
+1064890≡Old Edge II≡2019-04-23≡1≡LTrust≡LTrust≡windows≡0≡Single-player≡Adventure;Casual;Indie;Simulation≡Indie;Casual;Adventure≡0≡4≡0≡0≡0≡0-20000≡0.79
+1065160≡Deatherem≡2019-04-23≡1≡Anima≡Team Syukino≡windows≡0≡Single-player;Steam Achievements≡Indie≡Indie;Horror;First-Person≡1≡2≡2≡0≡0≡0-20000≡2.09
+1065230≡Room of Pandora≡2019-04-24≡1≡SHEN JIAWEI≡SHEN JIAWEI≡windows≡0≡Single-player;Steam Achievements≡Adventure;Casual;Indie≡Adventure;Indie;Casual≡7≡3≡0≡0≡0≡0-20000≡2.09
+1065570≡Cyber Gun≡2019-04-23≡1≡Semyon Maximov≡BekkerDev Studio≡windows≡0≡Single-player≡Action;Adventure;Indie≡Action;Indie;Adventure≡0≡8≡1≡0≡0≡0-20000≡1.69
+1065650≡Super Star Blast≡2019-04-24≡1≡EntwicklerX≡EntwicklerX≡windows≡0≡Single-player;Multi-player;Co-op;Shared/Split Screen;Steam Achievements;Full controller support;Steam Cloud≡Action;Casual;Indie≡Action;Indie;Casual≡24≡0≡1≡0≡0≡0-20000≡3.99
+1066700≡New Yankee 7: Deer Hunters≡2019-04-17≡1≡Yustas Game Studio≡Alawar Entertainment≡windows;mac≡0≡Single-player;Steam Cloud≡Adventure;Casual;Indie≡Indie;Casual;Adventure≡0≡2≡0≡0≡0≡0-20000≡5.19
+1069460≡Rune Lord≡2019-04-24≡1≡Adept Studios GD≡Alawar Entertainment≡windows;mac≡0≡Single-player;Steam Cloud≡Adventure;Casual;Indie≡Indie;Casual;Adventure≡0≡4≡0≡0≡0≡0-20000≡5.19
