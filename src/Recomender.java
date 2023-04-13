@@ -1,10 +1,4 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-
-import static java.util.Collections.reverse;
-
 public class Recomender {
     ArrayList<Game> games;
     public Recomender(ArrayList<Game> games) {

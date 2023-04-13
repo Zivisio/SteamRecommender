@@ -1,10 +1,8 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.io.PrintWriter;
 public class Main {
     public void old() throws FileNotFoundException {
         long begin = System.currentTimeMillis();
