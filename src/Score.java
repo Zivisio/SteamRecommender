@@ -1,6 +1,6 @@
 public class Score {
-    int positive_ratings;
-    int negative_ratings;
+    double positive_ratings;
+    double negative_ratings;
 
     double ratio;
     int appid;
