@@ -7,10 +7,10 @@ public class Recomender {
 
     public void gameslikeusingfancy(String name){
         int Indexofappid = nametoappid(name);
-        ArrayList<GameWithScore> med = new ArrayList<GameWithScore>();
-        for(int i = 0; i < games.size(); i++) {
-            double score = gamescore(games.get(i), games.get(Indexofappid));
-            med.add(new GameWithScore(games.get(i), score));
+        ArrayList<GameWithScore> med = new ArrayList<>();
+        for (Game game : games) {
+            double score = gamescore(game, games.get(Indexofappid));
+            med.add(new GameWithScore(game, score));
         }
         //sort med by score
         for(int i = 0; i < med.size(); i++){
@@ -22,21 +22,18 @@ public class Recomender {
                 }
             }
         }
-
-
         for(int i =0;i<10;i++){
             med.get(i).game.printname();
         }
     }
     public int nametoappid(String name) {
         for (int i = 0; i < games.size(); i++) {
-            if (games.get(i).name.toLowerCase().equals( name.toLowerCase())) {
+            if (games.get(i).name.equalsIgnoreCase(name)) {
                 return i;
             }
         }
         return -1;
     }
-
     public double gamescore(Game a, Game b){
         if((a.score.positive_ratings == 0 || b.score.positive_ratings == 0)||(a.score.negative_ratings>a.score.positive_ratings)){
             return -100;
@@ -53,7 +50,6 @@ public class Recomender {
                     }
                 }
             }
-            return shared;
         }else{
             for (int i = 0; i < blong; i++) {
                 for (int j = 0; j < along; j++) {
@@ -62,7 +58,7 @@ public class Recomender {
                     }
                 }
             }
-            return shared;
         }
+        return shared;
     }
 }
