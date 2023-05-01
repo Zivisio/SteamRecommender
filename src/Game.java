@@ -1,15 +1,19 @@
 public class Game {
     Score score;
     Genre genre;
+    String genre_string;
     int appid;
     String name;
     String release_date;
     boolean english;
     String developer;
     String publisher;
-    String[] platforms;
+    boolean windows;
+    boolean mac;
+    boolean linux;
+
     int required_age;
-    String achievements;
+    int achievements;
     int average_playtime;
     int median_playtime;
     String owners;
@@ -25,19 +29,22 @@ public class Game {
         this.english = Boolean.parseBoolean(english);
         this.developer = developer;
         this.publisher = publisher;
-        this.platforms = platforms.split(";");
+        this.windows = platforms.contains("windows");
+        this.mac = platforms.contains("mac");
+        this.linux = platforms.contains("linux");
         this.required_age = Integer.parseInt(required_age);
-        this.achievements = achievements;
+        this.achievements = Integer.parseInt(achievements);
         this.average_playtime = Integer.parseInt(average_playtime);
         this.median_playtime = Integer.parseInt(median_playtime);
         this.owners = owners;
         String[] owners_data = owners.split("-");
         this.owners_low = Integer.parseInt(owners_data[0]);
         this.owners_high = Integer.parseInt(owners_data[1]);
-        this.owners_est = (owners_low + owners_high) / 2;
+        this.owners_est = (int)((owners_low + owners_high) / 2);
         this.price = Double.parseDouble(price);
         this.score = new Score(positive_ratings, negative_ratings+1,this.appid);
         this.genre = new Genre(genres, steamspy_tags, categories,this.appid);
+        this.genre_string = steamspy_tags;
     }
     public void printname(){
         System.out.println(this.name);
